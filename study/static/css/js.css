@@ -75,3 +75,12 @@
     transform: translateX(1px) translatey(1px);
     
 }
+
+/* Custom responsive styles for mobile and tablet screens */
+@media (max-width: 768px) {
+    #overlayImage1 {
+        max-width: 90%;
+        max-height: 90%;
+    }
+
+}

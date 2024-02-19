@@ -22,6 +22,7 @@
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 10px;
+    
 }
 
 .font_title{
@@ -100,6 +101,8 @@ body{
 .brand {
     display: flex;
     align-items: center;
+    justify-content: flex-start;
+    
 }
 
 .profile-pic {
@@ -142,7 +145,7 @@ body{
     flex-direction: row;
 }
 
-.left__about{
+.job_image_half{
     min-width:200px;
     min-height:300px;
     background-size: cover; 
@@ -160,7 +163,7 @@ body{
     
 }
 
-.right__about{
+.job_desc_half{
     min-width:600px;
     min-height:300px;
     margin: 1rem;
@@ -180,16 +183,16 @@ body{
     font-size: 0.8rem;
 }
 
-  .play__icon{
+.play__icon{
     width: 2rem;
     height: 2rem;
     stroke: white;
-  }
+}
 
-  .play__icon:hover{
+.play__icon:hover{
     stroke: red;
     transition: stroke 0.3s ease;
-  }
+}
 
 
 .link{
@@ -200,13 +203,6 @@ body{
     color: #2e95d3;
     transition: #2e95d3 0.3s ease;
 }
-
-
-
-
-
-
-
 
 
 
@@ -222,8 +218,6 @@ body{
     justify-content: center;
     align-items: flex-start;
     width: 100%;
-
-
 }
 
 .companies-exes,
@@ -233,7 +227,6 @@ body{
     align-items: center;
     justify-content: center;
     width: 100%;
-    
     margin-bottom: 4rem;
 }
 
@@ -287,8 +280,6 @@ body{
     
 }
 
-
-
 .footer {
     background-color: rgb(18,18,18);
     color: white;
@@ -298,20 +289,124 @@ body{
 }
 
 
-/* Width adjustments */
-@media (min-width: 1024px) {
+/* Width adjustments for larger screens */
+@media (min-width: 1400px) {
+
+    .mobile{
+        display:none
+    }
+
     .content {
         width: 50%;
     }
 }
 
-@media (max-width: 1023px) {
+@media (max-width: 1399px) {
+    .mobile{
+        display:none
+    }
     .content {
         width: 70%;
     }
+    .brand_name ,
+    .menu_item{
+        font-size: 0.8rem;
+    }
 }
 
-/* Custom responsive styles */
+@media (max-width: 1023px) {
+    .mobile{
+        display:none
+    }
+    .content {
+        width: 70%;
+    }
+    .menu_item{
+        font-size: 0.8rem;
+    }
+}
+
+/* Custom responsive styles for mobile and tablet screens */
 @media (max-width: 768px) {
-    /* Styles for mobile devices */
+
+    .desktop{
+        display: none
+    }
+    .mobile{
+        display: flex;
+    }
+
+
+    .header{
+    justify-content: flex-start;
+    }
+    .brand{
+        width: 100%;
+    }
+    .profile-pic{
+        width: 60px;
+        height: 60px;
+    }
+    .content {
+        width: 100%;
+    }
+    .font_mega {
+        font-size: 2rem;
+        letter-spacing: 5px;
+        text-align: center;
+    }
+
+    .font_title {
+        font-size: 18px;
+        letter-spacing: 2px;
+    }
+
+    .font_normal--title,
+    .font_normal {
+        font-size: 16px;
+    }
+
+    .spaced {
+        letter-spacing: 0.25rem;
+    }
+
+    .main-content,
+    .header {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    .header {
+        flex-direction: column;
+    }
+
+    .menu_item {
+        margin: 0.5rem 0;
+    }
+
+    .content,
+    .vertical,
+    .companies-container
+     {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .job_image_half,
+    .job_desc_half {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        min-width: 100%;
+        width: 90%;
+        margin-top :0.5rem;
+        margin-bottom: 1rem;
+    }
+
+
+    
+
+    .footer {
+        width: 100%;
+    }
 }

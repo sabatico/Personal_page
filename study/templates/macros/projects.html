@@ -1,0 +1,121 @@
+{% from "macros/svgs.html" import play_icon, fp_logo, orange_logo %}
+
+
+{% macro job_image_div_1 ()%}
+<div class="job_image_half">
+    <img id="element1" class="image_border hover-pointer desktop" data-image-url="{{ url_for('static', filename='images/dlpprobe.png') }}" src="{{ url_for('static', filename='images/dlpprobe_thumb.png') }}" alt="dlpprobe.com" >
+    <br class="desktop">
+    <img id="element2" class=" image_border hover-pointer image_size" data-image-url="{{ url_for('static', filename='images/dlpprobe1.png') }}" src="{{ url_for('static', filename='images/dlpprobe_thumb1.png') }}" alt="dlpprobe.com" >
+    <br class="desktop">
+    <div class="icons_container">
+        <!-- <a href="https://www.youtube.com/watch?v=VIDEO_ID" >{{play_icon("play__icon")}} </a> -->
+        <a class="link" href="https:/dlpprobe.com" target="_blank">dlpprobe.com</a>
+    </div>
+</div>
+{% endmacro %}
+
+{% macro job_description_div_1 () %}
+<div class="job_desc_half">
+    <p class="muted small">website & web-app</p>
+    <p class="font_title">DLP testing and test automation tool</p>
+    <br>
+    <p class="muted font_normal">Concise, tailored, easy to use website for DLP professionals. Ensures quick ad-hoc testing and provides endpoint automation means for scheduled jobs. </p>
+    <br> <br>
+    <p class="muted font_normal">Tech stack:</p>
+        <ul>
+            <li class="bullets muted font_normal">Back: Python, Flask, FastAPI, SQLAlchemy (Postgres)</li>
+            <li class="bullets muted font_normal">Front: Jinja2, vanilla JS</li>
+            <li class="bullets muted font_normal">Endpoint app: Python, Flask, Electron, Selenium WebDriver</li>
+        </ul>
+    
+    <br>
+    
+</div>
+{% endmacro %}
+
+
+{% macro job_image_div_2 ()%}
+<div class="job_image_half">
+    <img id="element3" class="image_border hover-pointer desktop" data-image-url="{{ url_for('static', filename='images/appliance.png') }}" src="{{ url_for('static', filename='images/appliance_thumb.png') }}" alt="Appliance Tool" >
+    <br class="desktop">
+    <img id="element4" class="image_border hover-pointer image_size" data-image-url="{{ url_for('static', filename='images/appliance1.png') }}" src="{{ url_for('static', filename='images/appliance_thumb1.png') }}" alt="Appliance Tool" >
+    <br class="desktop">
+    <div class="icons_container">
+        <!-- <a href="https://www.youtube.com/watch?v=VIDEO_ID" >{{play_icon("play__icon")}} </a> -->
+    </div>
+</div>
+{% endmacro %}
+
+{% macro job_description_div_2 () %}
+<div class="job_desc_half">
+    <p class="muted small">website</p>
+    <p class="font_title">Forcepoint Appliances Management Tool</p>
+    <br>
+    <p class="muted font_normal">Feature rich web server with means for centralized appliances managemenet. Ansible like. Uses SSH to interact with remote systems</p>
+    <br> <br>
+    <p class="muted font_normal">Tech stack:</p>
+        <ul>
+            <li class="bullets muted font_normal">Back: Python, Flask, Celery, SQLite</li>
+            <li class="bullets muted font_normal">Front: Jinja2, vanilla JS</li>
+        </ul>
+    
+</div>
+{% endmacro %}
+
+
+
+
+{% macro job_image_div_3 ()%}
+<div class="job_image_half">
+    <!--<img id="element5" class="image_border hover-pointer desktop" data-image-url="{{ url_for('static', filename='images/logoped.png') }}" src="{{ url_for('static', filename='images/logoped_thumb.png') }}" alt="Private Tutor Scheduler" >
+    <br class="desktop"> -->
+    <img id="element6" class="image_size image_border hover-pointer" data-image-url="{{ url_for('static', filename='images/logoped1.png') }}" src="{{ url_for('static', filename='images/logoped_thumb1.png') }}" alt="Private Tutor Scheduler" >
+    <br class="desktop">
+    <div class="icons_container">
+        <!-- <a href="https://www.youtube.com/watch?v=VIDEO_ID" >{{play_icon("play__icon")}} </a> -->
+        <a class="link" href="https:/logoped.tptexas.us" target="_blank">logoped.tptexas.us</a>
+    </div>
+</div>
+{% endmacro %}
+
+{% macro job_description_div_3 () %}
+<div class="job_desc_half">
+    <p class="muted small">website</p>
+    <p class="font_title">Private Tutors' Assistant</p>
+    <br>
+    <p class="muted font_normal">Tailored portal for private tutors. Easy students scheduling, homework planning and payments tracking</p>
+    <br> <br>
+    <p class="muted font_normal">Tech stack:</p>
+        <ul>
+            <li class="bullets muted font_normal">Back: Python, Flask, MongoDB, Babel</li>
+            <li class="bullets muted font_normal">Front: Jinja2</li>
+        </ul>
+    <br>
+    
+</div>
+{% endmacro %}
+
+
+
+
+{% macro job_image_div_4 ()%}
+<div class="job_image_half">
+</div>
+{% endmacro %}
+
+{% macro job_description_div_4 () %}
+<div class="job_desc_half">
+    <p class="muted small">Win.App</p>
+    <p class="font_title">Forcepoint Endpoints TS Tool</p>
+    <br>
+    <p class="muted font_normal">Native app that helps quickly troubleshoot Forcepoint DLP Endpoints. Logs parser, config management, services checks, etc. </p>
+    <br> <br>
+    <p class="muted font_normal">Tech stack:</p>
+        <ul>
+            <li class="bullets muted font_normal">APP: Python, Tkinter, SQLite</li>
+        </ul>
+    
+    <br>
+    <!-- <a href="https://www.youtube.com/watch?v=VIDEO_ID" >{{play_icon("play__icon")}} </a> -->
+</div>
+{% endmacro %}
