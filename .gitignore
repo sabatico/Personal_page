@@ -9,3 +9,4 @@ study.code-workspace
 /study/.env
 /study/lib/__pycache__
 /study/__pycache__
+._*
